@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark gh-nav ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./mediaIndex/ani.gif" alt="" width="250px" height="45px" >
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Cursos.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienes.html">Quienes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="convenio.html">Convenio</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      
+  <main class="container py-4">
+
+<!-- TRABAJADO POR PAOLA -->
+    <div class="banner-cursos text-center mb-5"> <!-- BANNER DE DESCRIPCION -->
+      <h2>Aprende a tu ritmo</h2>
+      <p class="mb-0">Explora nuestros bootcamps tecnológicos. <br>
+                      Al terminar un curso tendrás la opción de obtener tu certificado.</p>
+    </div>
+    <!-- SECCCION DE CATALOGO DE CUSOS  -->
+    <section class="seccion-cursos mb-5"> <!-- Categoría 1: Cusos de Programación -->
+      <h2 class="mb-4">Cursos de Programación</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">  <!-- Tarjeta Curso Python -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/python.jpg" class="card-img-top" alt="Imagen de Python desde cero" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Python desde cero</h3>
+              <p class="card-text">Aprende variables, estructuras de control y funciones.</p>
+             <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende los fundamentos de la programación utilizando Python, uno de los lenguajes más utilizados en el desarrollo de software.
+                    Durante el curso conocerás variables, tipos de datos, operadores, estructuras condicionales, bucles y funciones. Realizarás ejercicios prácticos 
+                    para desarrollar tu lógica de programación y crear pequeños programas que resuelvan problemas cotidianos. Está dirigido a estudiantes y personas 
+                    que desean iniciarse en el mundo de la programación sin conocimientos previos."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4"> <!-- Tarjeta Curso Java -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/java.jpg" class="card-img-top" alt="Imagen de Programación con Java" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Programación con Java</h3>
+              <p class="card-text">Desarrolla programas usando programación orientada a objetos.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Descubre cómo desarrollar aplicaciones utilizando Java y los principios de la programación orientada a objetos. 
+                    Aprenderás a trabajar con variables, estructuras de control, métodos, clases, objetos, encapsulamiento y herencia. Mediante ejercicios 
+                    prácticos, fortalecerás tus habilidades para construir programas organizados y reutilizables. Este curso está dirigido a estudiantes que
+                    desean ampliar sus conocimientos de programación y conocer las bases del desarrollo de aplicaciones."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">  <!-- Tarjeta Curso C# -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/csharp.jpg" class="card-img-top" alt="Imagen de Programación con C#" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Programación con C#</h3>
+              <p class="card-text">Conoce los fundamentos de C# y .NET.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Conoce los fundamentos de C# y su aplicación en el desarrollo de software utilizando el entorno .NET. Aprenderás sobre 
+                    variables, operadores, estructuras de control, métodos, clases y programación orientada a objetos. Desarrollarás pequeños proyectos 
+                    para comprender cómo funcionan las aplicaciones y mejorar tu capacidad para resolver problemas mediante código. Recomendado para estudiantes 
+                    interesados en el desarrollo de aplicaciones de escritorio y otros sistemas informáticos."> Ver más </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+   
+    <section class="seccion-cursos mb-5">   <!-- CATEGORIA 2: CURSOS DE DESARROLLO WEB -->
+      <h2 class="mb-4">Cursos de Desarrollo Web</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">    <!-- TARJETA CURSO DE HTML, CSS Y JS -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/html-css-js.jpg" class="card-img-top" alt="Imagen de HTML, CSS y JavaScript" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">HTML, CSS y JavaScript</h3>
+              <p class="card-text">Construye sitios web modernos y adaptables.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende a crear páginas web modernas utilizando las tres tecnologías fundamentales del desarrollo web. Con HTML organizarás el
+                    contenido de una página, con CSS personalizarás colores, tamaños y distribuciones, y con JavaScript incorporarás funcionalidades interactivas. 
+                    Como proyecto práctico, desarrollarás un sitio web adaptable a diferentes dispositivos. Ideal para principiantes que desean aprender a diseñar y 
+                    construir sus propias páginas web."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">   <!-- TARJETA CURSO REACT -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/react.jpg" class="card-img-top" alt="Imagen de Frontend con React" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Frontend con React</h3>
+              <p class="card-text">Desarrolla interfaces dinámicas con componentes.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende a desarrollar interfaces web dinámicas utilizando React, una biblioteca de JavaScript. Conocerás los componentes,
+                    propiedades, estados, eventos y la organización de aplicaciones frontend. Realizarás ejercicios prácticos para construir interfaces reutilizables
+                    y mejorar la interacción con los usuarios. Está dirigido a estudiantes que ya poseen conocimientos básicos de HTML, CSS y JavaScript y desean
+                    avanzar en el desarrollo web."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">   <!-- TARJETA CURSO NODE -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/nodejs.jpg" class="card-img-top" alt="Imagen de Backend con Node.js" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Backend con Node.js</h3>
+              <p class="card-text">Crea servidores y servicios web.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Descubre cómo desarrollar la parte interna de las aplicaciones web utilizando Node.js. Aprenderás a crear servidores, manejar
+                    solicitudes HTTP, organizar rutas y desarrollar servicios que permitan intercambiar información entre el cliente y el servidor. También 
+                    conocerás conceptos básicos de las API. Este curso está recomendado para estudiantes que desean comprender cómo funcionan las aplicaciones 
+                    web más allá de su interfaz visual."> Ver más </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section> 
+
+    <section class="seccion-cursos mb-5">  <!-- CATEGORIA: CIENCIA DE DATOS E IA -->
+      <h2 class="mb-4">Cursos de Datos e Inteligencia Artificial</h2>
+      <div class="row g-4">
+      
+        <div class="col-12 col-md-4">  <!-- TARJETA CURSO DE IA GENERATIVA -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/ia-generativa.jpg" class="card-img-top" alt="Imagen de Inteligencia Artificial Generativa" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Inteligencia Artificial Generativa</h3>
+              <p class="card-text">Explora aplicaciones de los modelos generativos.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Explora los fundamentos de la inteligencia artificial generativa y sus aplicaciones en la creación de textos, imágenes y 
+                    contenido digital. Conocerás conceptos como modelos generativos, instrucciones o prompts y uso responsable de herramientas de inteligencia 
+                    artificial. Mediante actividades prácticas, aprenderás a aprovechar estas tecnologías para mejorar procesos de estudio, creatividad y
+                    productividad. Dirigido a estudiantes y profesionales interesados en las nuevas tecnologías."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">  <!-- TARJETA CURSO CIENCIA DE DATOS -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/ciencia-datos.jpg" class="card-img-top" alt="Imagen de Ciencia de Datos con Python" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Ciencia de Datos con Python</h3>
+              <p class="card-text">Analiza datos con herramientas de Python.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende a analizar e interpretar información utilizando Python y herramientas de análisis de datos. Conocerás conceptos 
+                    de limpieza, organización, exploración y visualización de datos. Trabajarás con bibliotecas como Pandas y Matplotlib para identificar 
+                    patrones y presentar resultados mediante gráficos. Como actividad práctica, desarrollarás un pequeño análisis de datos. Recomendado para 
+                    estudiantes interesados en la tecnología, estadística y toma de decisiones basada en información."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4"> <!-- TARJETA CURSO DATOS CON POWER BI -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/powerbi.jpg" class="card-img-top" alt="Imagen de Análisis de Datos con Power BI" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Análisis de Datos con Power BI</h3>
+              <p class="card-text">Crea informes y paneles interactivos.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende a transformar información en reportes visuales utilizando Microsoft Power BI. Conocerás cómo importar datos,
+                    organizar tablas, crear gráficos y diseñar paneles interactivos que faciliten la interpretación de resultados. Mediante ejercicios
+                    prácticos, elaborarás un dashboard para representar indicadores y apoyar la toma de decisiones. Está dirigido a estudiantes y personas 
+                    interesadas en el análisis de información empresarial."> Ver más </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    
+    <section class="seccion-cursos mb-5">  <!-- Categoría 4: Ciberseguridad y Redes -->
+      <h2 class="mb-4">Cursos de Ciberseguridad y Redes</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">    <!-- Tarjeta de curso de Ciberseguridad -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/ciberseguridad.jpg" class="card-img-top" alt="Imagen de Fundamentos de Ciberseguridad" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Fundamentos de Ciberseguridad</h3>
+              <p class="card-text">Aprende principios de protección digital.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Conoce los principios fundamentales de la seguridad informática y la protección de la información digital. Aprenderás 
+                    sobre amenazas informáticas, malware, phishing, contraseñas seguras y medidas para proteger dispositivos y cuentas. También 
+                    comprenderás la importancia de la confidencialidad, integridad y disponibilidad de los datos. Este curso está dirigido a estudiantes 
+                    y usuarios interesados en desarrollar buenas prácticas de seguridad digital."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4"> <!-- Tarjeta de curso de Hacking Etico -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/hacking-etico.jpg" class="card-img-top" alt="Imagen de Hacking Ético" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Hacking Ético</h3>
+              <p class="card-text">Conoce prácticas de evaluación autorizada.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Introdución a los conceptos del hacking ético y la evaluación autorizada de la seguridad informática. Conocerás las etapas
+                    básicas de una auditoría de seguridad, identificación de vulnerabilidades y análisis de riesgos. Mediante prácticas en entornos controlados,
+                    comprenderás cómo detectar debilidades y proponer medidas de protección. Está dirigido a estudiantes interesados en la ciberseguridad y 
+                    la protección de sistemas informáticos."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">   <!-- Tarjeta de Curso de REdes y comunicacionesS -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/redes.jpg" class="card-img-top" alt="Imagen de Redes y Comunicaciones" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Redes y Comunicaciones</h3>
+              <p class="card-text">Comprende el funcionamiento de las redes.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende cómo se conectan y comunican los dispositivos dentro de una red informática. Conocerás conceptos como direcciones IP,
+                    protocolos de comunicación, redes LAN y WAN, routers y switches. Realizarás ejercicios básicos de configuración y análisis de conexiones
+                    para comprender el funcionamiento de las redes. Este curso está recomendado para estudiantes interesados en soporte técnico, infraestructura 
+                    y administración de redes."> Ver más </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-cursos mb-5">  <!-- Categoría 5: Diseño Digital -->
+      <h2 class="mb-4">Cursos de Diseño Digital</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">  <!-- Tarjeta Curso UX/UI -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/ux-ui.jpg" class="card-img-top" alt="Imagen de Diseño UX/UI" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Diseño UX/UI</h3>
+              <p class="card-text">Diseña experiencias e interfaces accesibles.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende los principios del diseño de experiencia de usuario (UX) y de interfaces de usuario (UI). 
+                    Conocerás cómo investigar necesidades, organizar contenidos, diseñar pantallas y mejorar la facilidad de uso de aplicaciones y páginas web. 
+                    Desarrollarás propuestas visuales y prototipos para representar soluciones digitales. Está dirigido a estudiantes interesados en el diseño 
+                    de productos digitales centrados en las personas.."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">  <!-- Tarjeta de Curso Diseño Grafico Digital-->
+          <article class="card curso-card h-100">
+            <img src="imagenes/diseno-grafico.jpg" class="card-img-top" alt="Imagen de Diseño Gráfico Digital" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Diseño Gráfico Digital</h3>
+              <p class="card-text">Crea piezas visuales para medios digitales.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Descubre los fundamentos del diseño gráfico aplicado a medios digitales. Aprenderás conceptos de composición, teoría del color,
+                    tipografía, identidad visual y edición de imágenes. Conocerás herramientas de diseño para elaborar afiches, publicaciones para redes sociales 
+                    y piezas publicitarias. Como proyecto práctico, crearás una propuesta gráfica para una marca. Ideal para estudiantes interesados en desarrollar
+                    su creatividad mediante herramientas digitales."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">  <!-- Tarjeta curso diseño Web responsivo -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/responsive.jpg" class="card-img-top" alt="Imagen de Diseño Web Responsivo" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Diseño Web Responsivo</h3>
+              <p class="card-text">Adapta diseños a distintas pantallas.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende a diseñar páginas web que se adapten correctamente a computadoras, tabletas y teléfonos móviles. Conocerás técnicas de 
+                    diseño responsivo utilizando CSS, Flexbox, Grid y consultas de medios (media queries). Mediante ejercicios prácticos, aprenderás a organizar 
+                    elementos y ajustar imágenes, textos y menús según el tamaño de la pantalla. Recomendado para estudiantes con conocimientos básicos de HTML
+                    y CSS."> Ver más </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-cursos mb-5">   <!-- Categoría 6: Marketing y Negocios Digitales -->
+      <h2 class="mb-4">Cursos de Marketing y Negocios Digitales</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-4">   <!-- Tarjeta de curso Marketing Digital -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/marketing.jpg" class="card-img-top" alt="Imagen de Marketing Digital" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Marketing Digital</h3>
+              <p class="card-text">Planifica campañas para canales digitales.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende los fundamentos del marketing digital y su aplicación en la promoción de productos y servicios por internet. 
+                    Conocerás estrategias de contenido, publicidad digital, posicionamiento en buscadores y análisis de resultados. Mediante actividades 
+                    prácticas, desarrollarás una propuesta básica de campaña para una marca o emprendimiento. Dirigido a estudiantes, emprendedores y personas 
+                    interesadas en los negocios digitales."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">   <!-- Tarjeta de curso Community Manager -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/community.jpg" class="card-img-top" alt="Imagen de Community Manager" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Community Manager</h3>
+              <p class="card-text">Gestiona comunidades en redes sociales.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Aprende a gestionar comunidades digitales y fortalecer la presencia de una marca en redes sociales. Conocerás técnicas de 
+                    planificación de publicaciones, creación de contenido, interacción con seguidores y seguimiento de indicadores. Como proyecto práctico, 
+                    elaborarás un calendario de publicaciones para una empresa o emprendimiento. Está dirigido a estudiantes interesados en comunicación digital, 
+                    redes sociales y marketing."> Ver más </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-4">   <!-- Tarjeta de curso Comercio Electronico -->
+          <article class="card curso-card h-100">
+            <img src="imagenes/ecommerce.jpg" class="card-img-top" alt="Imagen de Comercio Electrónico" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Comercio Electrónico</h3>
+              <p class="card-text">Conoce cómo funcionan las tiendas en línea.</p>
+              <button type="button" class="btn btn-primary mt-auto ver-mas"
+                    data-detalle="Descubre cómo funcionan las tiendas virtuales y los principales procesos del comercio electrónico. Aprenderás conceptos relacionados
+                    con catálogos digitales, carritos de compra, medios de pago, atención al cliente y estrategias de venta por internet. Mediante ejercicios prácticos,
+                    diseñarás una propuesta básica de tienda virtual. Ideal para estudiantes y emprendedores interesados en comercializar productos o servicios mediante
+                    plataformas digitales."> Ver más </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>  
+    <!-- FIN DE SECCIONES DE CATALOGO DE CURSOS -->
+
+    <!-- SECCION DE CONTACTO -->
+    <section id="contacto" class="contacto row g-0 mb-4"> 
+        <div class="col-lg-5 contacto-info">
+        <video class="video-contacto" autoplay muted loop playsinline>
+          <source src="media/promo_cursos.mp4"  type="video/mp4">
+          Tu navegador no admite videos.
+        </video>
+        </div>
+      
+        <div class="col-lg-7 contacto-form">
+          <form id="formContacto" action="https://formsubmit.co/minopepaola@gmail.com" method="POST" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu nombre">
+              <div class="error-texto" id="errorNombre"></div>
+            </div>
+      
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo</label>
+              <input type="email" name="email" class="form-control" id="correo" placeholder="tucorreo@ejemplo.com">
+              <div class="error-texto" id="errorCorreo"></div>
+            </div>
+      
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" name="mensaje" id="mensaje" rows="2" maxlength="200" placeholder="¿En qué podemos ayudarte?"></textarea>
+              <div class="d-flex justify-content-between">
+                <div class="error-texto" id="errorMensaje"></div>
+                <small class="text-muted"><span id="contador">0</span>/200</small>
+              </div>
+            </div>
+      
+            <button type="submit" class="btn btn-naranja w-100">Enviar mensaje</button>
+            <div id="respuesta" class="mt-3"></div>
+          </form>
+        </div>
+      </section>  
+      <!-- CIERRA SECCION DE CONTACTO -->
+
+      <!-- VENTANA CONFIRMACION DE FORMULARIO -->
+      <div class="modal fade" id="modalEnvio" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content text-center p-4">
+            <div id="modalContenido"></div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+
+
+
+
+      <button id="btnSubir" class="btn-subir" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+  </main>
+
+  <footer class="footer pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-------------------------- Marca -------------------->
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Codexa</h5>
+            <p class="footer-texto">Codexa es un bootcamp de desarrollo Full Stack donde aprendes a crear aplicaciones web completas, desde el frontend hasta el backend, APIs y bases de datos.</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="icons" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="icons" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="icons" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="icons" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="icons" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!------------------ Enlaces ---------------->
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <h6 class="fw-bold mb-3">Navegación</h6>
+            <ul class="list-unstyled footer-lista">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Cursos.html">Cursos</a></li>
+              <li><a href="quienes.html">Quiénes somos</a></li>
+              <li><a href="convenio.html">Convenio</a></li>
+            </ul>
+          </div>
+
+          <!------------------------ Contacto ------------------>
+          <div class="col-6 col-lg-4">
+            <h6 class="fw-bold mb-3">Contacto</h6>
+            <ul class="list-unstyled footer-lista">
+              <li><i class="bi bi-geo-alt me-2"></i>Lima, Perú</li>
+              <li><i class="bi bi-envelope me-2"></i>Codexa@academy.com</li>
+              <li><i class="bi bi-telephone me-2"></i>+51 999 999 999</li>
+              <li><i class="bi bi-clock me-2"></i>Lun - Vie, 9:00 a 18:00</li>
+            </ul>
+          </div>
+        </div>
+          <hr class="footer-linea my-4">
+          <span>&copy; 2026 Nombre. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cursos.js"></script> <!-- AGREGADO  -->
+</body>
+</html>

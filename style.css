@@ -1,0 +1,226 @@
+:root {
+  --gh-violeta: #0b862077;
+  --gh-naranja: #540bff;
+  --gh-oscuro: #2727d8d0;
+}
+body{
+  background: linear-gradient(90deg, #ffffff, #0678e2);
+}
+.gh-nav {
+  background: linear-gradient(90deg, #ffffff, #0678e2);
+  --bs-navbar-color: rgba(27, 26, 26, 0.918);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+}
+
+.gh-nav .nav-link:hover,
+.gh-nav .nav-link.active {
+  box-shadow: inset 0 -3px 0 var(--gh-naranja);
+}
+
+.footer {
+  background:linear-gradient(90deg, #0c0c0c, #034888);
+  color: #fff;
+}
+.footer-texto { 
+  color: rgba(235, 191, 191, 0.7); 
+}
+
+.footer-lista li { 
+  margin-bottom: .5rem; 
+  color: rgba(255, 255, 255, .7); 
+}
+.footer-lista a {
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+}
+.footer-lista a:hover { 
+  color: #2834d4; 
+}
+
+.footer-linea { 
+  border-color: rgba(118, 247, 14, 0.2); 
+  opacity: 1; 
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.icons:hover {
+  background: var(--gh-naranja, #e66e43);
+  color: #fff;
+  transform: translateY(-3px);
+}
+.btn-cursos {
+  background-color: rgb(183, 0, 255);
+  border-color: var(--gh-naranja);
+  color: #fff;
+  font-weight: 600;
+}
+.btn-cursos:hover {
+  background: #ee22e4f3;
+  border-color: #070707;
+  color: #fff;
+}
+.btn-enviar{
+  background-color: rgb(33, 175, 168);
+  color: #fff;
+  font-weight: 600;
+  position: center;
+}
+.btn-enviar:hover {
+  background: #175cacf3;
+  border-color: #070707;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  background-color: rgb(242, 242, 245);
+  --bs-btn-border-color: var(--gh-violeta);
+  --bs-btn-hover-bg: rgba(255, 0, 0, 0.719);
+  --bs-btn-hover-border-color: var(--gh-violeta);
+}
+ 
+.portada {
+  padding: 2rem 0;
+}
+.portada-titulo {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--gh-oscuro);
+  margin-bottom: 1rem;
+}
+.portada-texto {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  max-width: 45ch;
+}
+.video-marco {
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 4px solid red;
+}
+ 
+.numero-caja {
+  background: #f1f7fc;
+  border-radius: .75rem;
+  padding: 1.5rem 1rem;
+  border-bottom: 4px solid var(--gh-violeta);
+}
+.numero {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gh-violeta);
+}
+.numero-caja p {
+  margin: 0;
+  color: #555;
+}
+ 
+.beneficio {
+  height: 100%;
+  padding: 1.5rem;
+  border-left: 5px solid var(--gh-naranja);
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+  transition: transform .5s;
+  border-radius: 1rem;
+}
+.beneficio:hover {
+  transform: translateY(-5px);
+}
+.beneficio i {
+  font-size: 2rem;
+  color: var(--gh-violeta);
+}
+ 
+.contacto {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.contacto-form {
+  display: flex;
+  align-items: stretch;
+  background: linear-gradient(90deg, #7c7ddd, #0556a1);
+  padding: 2.5rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+.contacto-form form {
+  flex: 1;
+  min-width: 0;
+}
+
+.contacto-info {
+  flex: 0 0 380px;
+  max-width: 40%;
+}
+
+.contacto-info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 0.75rem;
+  display: block;
+}
+
+.error-texto {
+  color: #dc3545;
+  font-size: .85rem;
+  min-height: 1.2rem;
+}
+
+.form-control.invalido {
+  border-color: #dc3545;
+}
+.form-control.valido {
+  border-color: #198754;
+}
+.btn-subir {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border:2px solid transparent;
+  border-radius: 50%;
+  background:#540bff;
+  color: #fff;
+  font-size: 1.3rem;
+  display: none;
+}
+.btn-subir.visible {
+  display: block;
+}
+.btn-subir:hover {
+  background: #367eb8;
+  border: 2px solid #e0dede;
+}
+
+#modalEnvio .modal-content {
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 50px rgba(33, 29, 85, .25);
+}
+.modal-backdrop.show {
+  opacity: 1;
+  background: rgba(33, 29, 85, .45);
+  backdrop-filter: blur(4px);
+}
+
+
+
