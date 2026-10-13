@@ -183,9 +183,6 @@ body{
 
 
 
-
-
-
 #modalEnvio .modal-content {
   border: none;
   border-radius: 1.5rem;
@@ -196,23 +193,6 @@ body{
   background: rgba(33, 29, 85, .45);
   backdrop-filter: blur(4px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
