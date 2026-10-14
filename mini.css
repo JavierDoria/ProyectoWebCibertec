@@ -1,46 +1,38 @@
-:root {
-  --gh-violeta: #0b862077;
-  --gh-naranja: #540bff;
-  --gh-oscuro: #2727d8d0;
-}
-body{
+body {
   background: linear-gradient(90deg, #ffffff, #0678e2);
 }
+
+/* NAVBAR */
 .gh-nav {
   background: linear-gradient(90deg, #ffffff, #0678e2);
   --bs-navbar-color: rgba(27, 26, 26, 0.918);
   --bs-navbar-hover-color: #fff;
   --bs-navbar-active-color: #fff;
 }
-
 .gh-nav .nav-link:hover,
 .gh-nav .nav-link.active {
-  box-shadow: inset 0 -3px 0 var(--gh-naranja);
+  box-shadow: inset 0 -3px 0 #540bff;
 }
 
+/* FOOTER */
 .footer {
-  background:linear-gradient(90deg, #000000, #034888);
+  background: linear-gradient(90deg, #000000, #034888);
   color: #fff;
 }
 .footer-texto { 
   color: rgba(235, 191, 191, 0.7); 
 }
-
 .footer-lista li { 
-  margin-bottom: .5rem; 
-  color: rgba(255, 255, 255, .7); 
+  margin-bottom: .5rem; color: rgba(255, 255, 255, .7); 
 }
 .footer-lista a {
-  color: rgba(255, 255, 255, .7);
-  text-decoration: none;
+   color: rgba(255, 255, 255, .7); text-decoration: none; 
 }
-.footer-lista a:hover { 
-  color: #2834d4; 
-}
-
+.footer-lista a:hover {
+   color: #2834d4; 
+  }
 .footer-linea { 
-  border-color: rgba(118, 247, 14, 0.2); 
-  opacity: 1; 
+  border-color: rgba(118, 247, 14, 0.2); opacity: 1; 
 }
 
 .icons {
@@ -57,106 +49,131 @@ body{
   transition: background .2s, transform .2s;
 }
 .icons:hover {
-  background: var(--gh-naranja, #e66e43);
-  color: #fff;
+  background: #540bff;
   transform: translateY(-3px);
 }
+
+/* BOTÓN SUBIR */
 .btn-subir {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
   width: 48px;
   height: 48px;
-  border:2px solid transparent;
+  border: 2px solid transparent;
   border-radius: 50%;
-  background:#540bff;
+  background: #540bff;
   color: #fff;
   font-size: 1.3rem;
   display: none;
 }
 .btn-subir.visible {
-  display: block;
+   display: block; 
+  }
+.btn-subir:hover { 
+  background: #367eb8; border: 2px solid #e0dede; 
 }
-.btn-subir:hover {
-  background: #367eb8;
-  border: 2px solid #e0dede;
+
+/* MAIN (responsive) */
+main.container {
+  padding-left: 12px;
+  padding-right: 12px;
+  overflow-x: hidden;
+}
+main * {
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .intro {
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #1b54e4, #0f172a);
   color: #fff;
   border-radius: 30px;
+  margin-bottom: 24px;
+}
+.intro h1 { 
+  font-size: clamp(1.5rem, 6vw, 2.5rem); 
 }
 .intro p {
   max-width: 650px;
   margin: 0 auto;
-  font-size: 1.1rem;
-  opacity: 0.9;
+  font-size: clamp(0.95rem, 3.5vw, 1.1rem);
 }
 
-.objetivos{
-  display: flex;
-  padding: 10px;
-  margin: 10px;
+/* Misión/Visión y Valores: 2 columnas en PC, 1 en celular */
+.objetivos,
+.dialog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
 }
-
-.objetivos-text{
-  color: #6428d4;
-  font-size: 40px;
-}
-.objetivo-border{
+.objetivos-sep {
+   margin: 0; 
+  }
+.objetivo-border {
   background-color: #847ed694;
   border-radius: 10px;
-  padding: 15px;
-  transition: transform .25s ease, box-shadow .25s ease; 
+  padding: 16px;
+  height: 100%;
+  transition: transform .25s ease;
 }
-.objetivo-border:hover{
-  transform: translateY(-4px);
-}
-.objetivos-sep{
-  margin: 10px;
-}
-.ofrecemos h2{
-  color: #be6a0a;
-  font-size: 40px;
-}
-
-.ofrecemos p{
-  font-size: 20px;
-}
-.ofrecemos li{
-  font-size: 20px;
-}
-.valores h2{
-  color: #be6a0a;
-  font-size: 40px;
-  text-align: center;
-}
-.dialog{
-  display: flex;
-}
-.dialog-text{
+.dialog-text {
   background-color: #9fb0db86;
-  margin: 10px;
   border-radius: 10px;
-  padding: 10px;
-  transition: transform .25s ease, box-shadow .25s ease; 
+  padding: 16px;
+  transition: transform .25s ease;
 }
-.dialog-text:hover{
-  transform: translateY(-5px);
+.objetivo-border:hover { 
+  transform: translateY(-4px);
+ }
+.dialog-text:hover {
+   transform: translateY(-5px); 
+  }
+
+/* Títulos */
+.objetivos-text { 
+  color: #6428d4; 
 }
-.equipo h2{
-  color: #034888;
+.ofrecemos h2,
+.valores h2 {
+   color: #be6a0a; 
+  }
+.valores h2,
+.equipo h2 { 
   text-align: center;
-  padding: 10px;
-}
-.col-md-4{
-  transition: transform .25s ease, box-shadow .25s ease; 
+ }
+.equipo h2 { 
+  color: #034888; padding: 10px;
 }
 
-.col-md-4:hover{
-  transform: translateY(-5px);
-  cursor: pointer;
+.objetivos-text,
+.ofrecemos h2,
+.valores h2,
+.equipo h2 { 
+  font-size: clamp(1.6rem, 6vw, 2.5rem);
+ }
+
+/* Textos */
+.ofrecemos {
+   margin-bottom: 24px; 
+  }
+.ofrecemos p,
+.ofrecemos li { 
+  font-size: clamp(1rem, 3.8vw, 1.25rem); 
+}
+
+/* Equipo: efecto solo con mouse */
+.col-md-4 { 
+  transition: transform .25s ease; 
+}
+@media (hover: hover) {
+  .col-md-4:hover { transform: translateY(-5px); cursor: pointer; }
+}
+
+/* Celular */
+@media (max-width: 576px) {
+  .intro { padding: 36px 16px; border-radius: 20px; }
 }
