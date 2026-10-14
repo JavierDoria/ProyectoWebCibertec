@@ -84,11 +84,6 @@ body{
 
 
 
-
-
-
-
-
 /* Banner de Cursos */
 .banner-cursos { 
     background: #eaf5fd;
@@ -124,12 +119,10 @@ body{
     padding: 22px;
  }
 .curso-card .btn-primary {
-     background-color: #2090db; 
-     border-color: #2090db; 
+    background-color: #2090db; 
     }
 .curso-card .btn-primary:hover {
-     background-color: #176da8;
-      border-color: #176da8; 
+    background-color: #176da8;
     }
    
 /* Seccion de contacto */
