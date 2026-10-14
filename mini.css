@@ -82,37 +82,81 @@ body{
   border: 2px solid #e0dede;
 }
 
+.intro {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1b54e4, #0f172a);
+  color: #fff;
+  border-radius: 30px;
+}
+.intro p {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
 
+.objetivos{
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
 
+.objetivos-text{
+  color: #6428d4;
+  font-size: 40px;
+}
+.objetivo-border{
+  background-color: #847ed694;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform .25s ease, box-shadow .25s ease; 
+}
+.objetivo-border:hover{
+  transform: translateY(-4px);
+}
+.objetivos-sep{
+  margin: 10px;
+}
+.ofrecemos h2{
+  color: #be6a0a;
+  font-size: 40px;
+}
 
+.ofrecemos p{
+  font-size: 20px;
+}
+.ofrecemos li{
+  font-size: 20px;
+}
+.valores h2{
+  color: #be6a0a;
+  font-size: 40px;
+  text-align: center;
+}
+.dialog{
+  display: flex;
+}
+.dialog-text{
+  background-color: #9fb0db86;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform .25s ease, box-shadow .25s ease; 
+}
+.dialog-text:hover{
+  transform: translateY(-5px);
+}
+.equipo h2{
+  color: #034888;
+  text-align: center;
+  padding: 10px;
+}
+.col-md-4{
+  transition: transform .25s ease, box-shadow .25s ease; 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.col-md-4:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+}

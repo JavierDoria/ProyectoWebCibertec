@@ -82,6 +82,7 @@ body{
   border: 2px solid #e0dede;
 }
 
+
 /* Introducción */
 .intro {
   text-align: center;
@@ -246,11 +247,7 @@ body{
   color: #64748b;
 }
 
-/* Móvil */
-@media (max-width: 600px) {
-  .intro { padding: 50px 16px; }
-  .seccion { padding: 45px 16px; }
-}
+
 
 
 

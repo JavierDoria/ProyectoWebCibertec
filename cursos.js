@@ -129,10 +129,6 @@ formulario.addEventListener("submit", async function (evento) {
     console.log("Respuesta de FormSubmit:", envio.status, resultado);
     ///VERIFICACION
 
-
-
-
-
       if (envio.ok) {
       modalContenido.innerHTML =
       '<div class="loader-avion"><i class="bi bi-send-fill"></i></div>' +
