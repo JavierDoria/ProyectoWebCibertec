@@ -82,6 +82,10 @@ body{
   border: 2px solid #e0dede;
 }
 
+.navbar-nav{
+  font-size: 20px;
+  gap: 0.5rem;
+}
 
 /* Introducción */
 .intro {

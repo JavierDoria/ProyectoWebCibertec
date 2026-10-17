@@ -142,7 +142,10 @@ main * {
 .equipo h2 { 
   color: #034888; padding: 10px;
 }
-
+.navbar-nav{
+  font-size: 20px;
+  gap: 0.5rem;
+}
 .objetivos-text,
 .ofrecemos h2,
 .valores h2,

@@ -17,6 +17,10 @@ body{
 .gh-nav .nav-link.active {
   box-shadow: inset 0 -3px 0 var(--gh-naranja);
 }
+.navbar-nav{
+  font-size: 20px;
+  gap: 0.5rem;
+}
 
 .footer {
   background:linear-gradient(90deg, #000000, #034888);
