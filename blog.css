@@ -1,0 +1,83 @@
+:root {
+  --gh-violeta: #0b862077;
+  --gh-naranja: #540bff;
+  --gh-oscuro: #2727d8d0;
+}
+body{
+  background: linear-gradient(90deg, #ffffff, #0678e2);
+}
+.gh-nav {
+  background: linear-gradient(90deg, #ffffff, #0678e2);
+  --bs-navbar-color: rgba(27, 26, 26, 0.918);
+  --bs-navbar-hover-color: #fff;
+  --bs-navbar-active-color: #fff;
+}
+
+.gh-nav .nav-link:hover,
+.gh-nav .nav-link.active {
+  box-shadow: inset 0 -3px 0 var(--gh-naranja);
+}
+
+.footer {
+  background:linear-gradient(90deg, #0c0c0c, #034888);
+  color: #fff;
+}
+.footer-texto { 
+  color: rgba(235, 191, 191, 0.7); 
+}
+
+.footer-lista li { 
+  margin-bottom: .5rem; 
+  color: rgba(255, 255, 255, .7); 
+}
+.footer-lista a {
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+}
+.footer-lista a:hover { 
+  color: #2834d4; 
+}
+
+.footer-linea { 
+  border-color: rgba(118, 247, 14, 0.2); 
+  opacity: 1; 
+}
+.icons {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .1);
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background .2s, transform .2s;
+}
+.icons:hover {
+  background: var(--gh-naranja, #e66e43);
+  color: #fff;
+  transform: translateY(-3px);
+}
+.btn-subir {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border:2px solid transparent;
+  border-radius: 50%;
+  background:#540bff;
+  color: #fff;
+  font-size: 1.3rem;
+  display: none;
+}
+.btn-subir.visible {
+  display: block;
+}
+.btn-subir:hover {
+  background: #367eb8;
+  border: 2px solid #e0dede;
+}
+

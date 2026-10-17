@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Novedades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark gh-nav sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./mediaIndex/ani.gif" alt="" width="250px" height="45px" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Cursos.html">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienes.html">Quienes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="convenio.html">Convenio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+    <main class="container py-4">
+      <div class="row text-center">
+        <div class="col-lg-8 mx-auto">
+          <h1 class="fw-bold display-5">Blog & Novedades</h1>
+          <p class="text-muted lead">Descubre artículos, guías de estudio y las últimas tendencias en tecnología, educación y desarrollo profesional.</p>
+        </div>
+      </div>
+
+      <div class="row mb-5 justify-content-center">
+        <div class="col-md-8 mx-auto">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+            <input type="text" id="inputBuscar" class="form-control border-start-0" placeholder="Buscar artículos por título...">
+            <button class="btn btn-primary px-4" id="btnBuscar" type="button">Buscar</button>
+          </div>
+          <div class="d-flex gap-2 flex-wrap justify-content-center mt-2" id="contenedorFiltros">
+            <button class="btn btn-sm btn-primary rounded-pill px-3 py-1 btn-filtro active" data-categoria="todos">Todos</button>
+            <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 btn-filtro" data-categoria="tecnologia">Tecnología</button>
+            <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 btn-filtro" data-categoria="programacion">Programación</button>
+            <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 btn-filtro" data-categoria="diseno">Diseño Web</button>
+            <button class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-1 btn-filtro" data-categoria="comunidad">Comunidad</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4" id="grillaArticulos">
+        <div class="col-md-6 col-lg-4 tarj-articulo" data-pagina="1" data-categoria="programacion" data-titulo="guia para principiantes por donde empezar en python">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 1">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-info text-dark">Programación</span></div>
+              <h5 class="card-title fw-bold">Guía para principiantes: ¿Por dónde empezar en Python?</h5>
+              <p class="card-text text-muted small flex-grow-1">Aprende la sintaxis básica e instalación de herramientas para tus primeros programas.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>8 Oct, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo" data-pagina="1" data-categoria="diseno" data-titulo="consejos practicos de ux ui para paginas web educativas">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 2">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-secondary">Diseño Web</span></div>
+              <h5 class="card-title fw-bold">Consejos prácticos de UX/UI para páginas web</h5>
+              <p class="card-text text-muted small flex-grow-1">Descubre cómo estructurar el contenido para mejorar la retención de tus usuarios.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>3 Oct, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo" data-pagina="1" data-categoria="comunidad" data-titulo="caso de exito de estudiante a desarrollador junior">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 3">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-success">Comunidad</span></div>
+              <h5 class="card-title fw-bold">Caso de éxito: De estudiante a desarrollador Junior</h5>
+              <p class="card-text text-muted small flex-grow-1">Entrevista a uno de nuestros egresados que logró su primer empleo en la industria.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>25 Sep, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo d-none" data-pagina="2" data-categoria="tecnologia" data-titulo="introduccion a la inteligencia artificial en la educacion">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 4">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-warning text-dark">Tecnología</span></div>
+              <h5 class="card-title fw-bold">Introducción a la Inteligencia Artificial</h5>
+              <p class="card-text text-muted small flex-grow-1">Cómo aprovechar herramientas de IA para potenciar tus horas de estudio.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>18 Sep, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo d-none" data-pagina="2" data-categoria="programacion" data-titulo="que es javascript moderno y como utilizar es6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 5">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-info text-dark">Programación</span></div>
+              <h5 class="card-title fw-bold">¿Qué es JavaScript Moderno (ES6+)?</h5>
+              <p class="card-text text-muted small flex-grow-1">Aprende sobre Arrow Functions, Promesas y métodos de arrays.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>10 Sep, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo d-none" data-pagina="2" data-categoria="tecnologia" data-titulo="las 5 habilidades tecnicas mas demandadas en 2026">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 6">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-warning text-dark">Tecnología</span></div>
+              <h5 class="card-title fw-bold">Habilidades técnicas más demandadas en 2026</h5>
+              <p class="card-text text-muted small flex-grow-1">Librerías y frameworks que dominan el mercado tecnológico.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>05 Sep, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo d-none" data-pagina="3" data-categoria="diseno" data-titulo="como crear un portafolio web que atraiga clientes">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 7">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-secondary">Diseño Web</span></div>
+              <h5 class="card-title fw-bold">Crea un portafolio web atractivo</h5>
+              <p class="card-text text-muted small flex-grow-1">Estrategias clave para presentar tus proyectos ante entrevistas laborales.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>01 Sep, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo d-none" data-pagina="3" data-categoria="comunidad" data-titulo="como prepararte para tu primera entrevista tecnica">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 8">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-success">Comunidad</span></div>
+              <h5 class="card-title fw-bold">Prepárate para tu primera entrevista técnica</h5>
+              <p class="card-text text-muted small flex-grow-1">Recomendaciones prácticas para superar las pruebas de código.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>28 Ago, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 tarj-articulo d-none" data-pagina="3" data-categoria="programacion" data-titulo="por que aprender html y css con bootstrap 5">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" style="height: 200px;" alt="Post 9">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge bg-info text-dark">Programación</span></div>
+              <h5 class="card-title fw-bold">Aprende HTML y CSS con Bootstrap 5</h5>
+              <p class="card-text text-muted small flex-grow-1">Construye layouts responsivos y adaptables sin complicarte con el CSS desde cero.</p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <small class="text-muted"><i class="bi bi-calendar3 me-1"></i>20 Ago, 2026</small>
+                <a href="#" class="btn btn-sm btn-link text-decoration-none fw-bold p-0">Leer más <i class="bi bi-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="sinResultados" class="text-center py-5 d-none">
+        <i class="bi bi-search display-1 text-muted"></i>
+        <h4 class="mt-3 fw-bold">No se encontraron artículos</h4>
+        <p class="text-muted">Intenta con otra palabra clave o selecciona otra categoría.</p>
+      </div>
+
+      <nav aria-label="Navegación de páginas" class="mt-5">
+        <ul class="pagination justify-content-center" id="paginacionBlog">
+          <li class="page-item disabled" id="itemAnterior"><a class="page-link" href="#" id="btnAnterior">Anterior</a></li>
+          <li class="page-item active" data-pagina="1"><a class="page-link" href="#">1</a></li>
+          <li class="page-item" data-pagina="2"><a class="page-link" href="#">2</a></li>
+          <li class="page-item" data-pagina="3"><a class="page-link" href="#">3</a></li>
+          <li class="page-item" id="itemSiguiente"><a class="page-link" href="#" id="btnSiguiente">Siguiente</a></li>
+        </ul>
+      </nav>
+
+      <section class="mt-5 pt-4 border-top">
+        <div class="row text-center mb-4">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="fw-bold">Preguntas Frecuentes</h2>
+            <p class="text-muted">Resolvemos tus dudas principales sobre nuestros cursos y publicaciones.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion shadow-sm" id="accordionFAQ">
+              <div class="accordion-item border-0 mb-2 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    ¿Los artículos del blog otorgan alguna certificación?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body text-muted">
+                    Los artículos del blog son recursos educativos gratuitos. Para obtener una certificación formal debes matricularte en alguno de nuestros <a href="Cursos.html">Cursos oficiales</a>.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    ¿Con qué frecuencia publican nuevo contenido?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body text-muted">
+                    Publicamos guías, tutoriales y artículos de actualidad técnica semanalmente.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 rounded overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    ¿Puedo proponer un tema para el blog o colaborar?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                  <div class="accordion-body text-muted">
+                    ¡Claro que sí! Puedes escribirnos desde nuestra sección de contacto o a través de nuestras redes sociales.
+                    <a href="index.html#contacto">Ingrese Aqui</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+      <button id="btnSubir" class="btn-subir" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    </main>
+
+    <footer class="footer pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-------------------------- Marca -------------------->
+          <div class="col-lg-4">
+            <h5 class="fw-bold mb-3">Codexa</h5>
+            <p class="footer-texto">Codexa es un bootcamp de desarrollo Full Stack donde aprendes a crear aplicaciones web completas, desde el frontend hasta el backend, APIs y bases de datos.</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="icons" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="icons" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="icons" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="icons" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="icons" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!------------------ Enlaces ---------------->
+          <div class="col-6 col-lg-2 offset-lg-1">
+            <h6 class="fw-bold mb-3">Navegación</h6>
+            <ul class="list-unstyled footer-lista">
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Cursos.html">Cursos</a></li>
+              <li><a href="quienes.html">Quiénes somos</a></li>
+              <li><a href="convenio.html">Convenio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+
+          <!------------------------ Contacto ------------------>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <h6 class="fw-bold mb-3">Contacto</h6>
+            <ul class="list-unstyled footer-lista">
+              <li><i class="bi bi-geo-alt me-2"></i>Lima, Perú</li>
+              <li><i class="bi bi-envelope me-2"></i>Codexa@academy.com</li>
+              <li><i class="bi bi-telephone me-2"></i>+51 999 999 999</li>
+              <li><i class="bi bi-clock me-2"></i>Lun - Vie, 9:00 a 18:00</li>
+            </ul>
+          </div>
+        </div>
+          <hr class="footer-linea my-4">
+          <span>&copy; 2026 Nombre. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

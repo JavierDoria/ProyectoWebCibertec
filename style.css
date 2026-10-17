@@ -153,7 +153,7 @@ body{
 
 .contacto-form {
   display: flex;
-  flex-direction: column;   /* en celular: uno debajo del otro */
+  flex-direction: column;
   align-items: stretch;
   background: linear-gradient(90deg, #7c7ddd, #0556a1);
   padding: 1.5rem;

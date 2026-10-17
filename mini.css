@@ -2,7 +2,6 @@ body {
   background: linear-gradient(90deg, #ffffff, #0678e2);
 }
 
-/* NAVBAR */
 .gh-nav {
   background: linear-gradient(90deg, #ffffff, #0678e2);
   --bs-navbar-color: rgba(27, 26, 26, 0.918);
@@ -14,7 +13,6 @@ body {
   box-shadow: inset 0 -3px 0 #540bff;
 }
 
-/* FOOTER */
 .footer {
   background: linear-gradient(90deg, #000000, #034888);
   color: #fff;
@@ -53,7 +51,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* BOTÓN SUBIR */
 .btn-subir {
   position: fixed;
   right: 1.5rem;
@@ -74,7 +71,6 @@ body {
   background: #367eb8; border: 2px solid #e0dede; 
 }
 
-/* MAIN (responsive) */
 main.container {
   padding-left: 12px;
   padding-right: 12px;
@@ -102,7 +98,6 @@ main * {
   font-size: clamp(0.95rem, 3.5vw, 1.1rem);
 }
 
-/* Misión/Visión y Valores: 2 columnas en PC, 1 en celular */
 .objetivos,
 .dialog {
   display: grid;
@@ -133,7 +128,6 @@ main * {
    transform: translateY(-5px); 
   }
 
-/* Títulos */
 .objetivos-text { 
   color: #6428d4; 
 }
@@ -156,7 +150,6 @@ main * {
   font-size: clamp(1.6rem, 6vw, 2.5rem);
  }
 
-/* Textos */
 .ofrecemos {
    margin-bottom: 24px; 
   }
@@ -165,7 +158,6 @@ main * {
   font-size: clamp(1rem, 3.8vw, 1.25rem); 
 }
 
-/* Equipo: efecto solo con mouse */
 .col-md-4 { 
   transition: transform .25s ease; 
 }
