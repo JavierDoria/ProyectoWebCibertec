@@ -104,10 +104,7 @@ function mostrarErrorEnvio() {
     '<button type="button" class="btn btn-naranja" data-bs-dismiss="modal">Cerrar</button>';
 }
 
-
- 
 const numeros = document.querySelectorAll(".numero");
- 
 numeros.forEach(function (numero) {
   const meta = Number(numero.dataset.meta);
   let actual = 0;

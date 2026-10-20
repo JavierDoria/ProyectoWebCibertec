@@ -32,22 +32,15 @@ const botones = document.querySelectorAll(".ver-mas");
 
 botones.forEach(function (boton) {
   boton.addEventListener("click", function () {
-    // Buscar el título y la descripción de la tarjeta seleccionada.
     const tarjeta = boton.closest(".curso-card");
     const titulo = tarjeta.querySelector(".card-title").textContent;
     
-    // Colocar la información dentro de la ventana.
     document.getElementById("tituloModal").textContent = titulo;
     document.getElementById("descripcionModal").textContent = boton.dataset.detalle;
-
-    // Mostrar la ventana.
     modalCurso.show();
   });
 });
 
-
-
-/*FORMULARIO DE CONTACTO*/
 const mensaje = document.getElementById("mensaje");
 const contador = document.getElementById("contador");
  
@@ -123,11 +116,8 @@ formulario.addEventListener("submit", async function (evento) {
       })
     });
 
-    
-    ///VERIFICACION MOMENTANEA
     const resultado = await envio.json();
     console.log("Respuesta de FormSubmit:", envio.status, resultado);
-    ///VERIFICACION
 
       if (envio.ok) {
       modalContenido.innerHTML =
@@ -152,7 +142,6 @@ formulario.addEventListener("submit", async function (evento) {
   }
 });
 
-// Muestra el modal de error
 function mostrarErrorEnvio() {
   modalContenido.innerHTML =
     '<i class="bi bi-x-circle-fill icono-error"></i>' +
@@ -161,9 +150,6 @@ function mostrarErrorEnvio() {
     '<button type="button" class="btn btn-naranja" data-bs-dismiss="modal">Cerrar</button>';
 }
 
-
-
-/*BOTON SUBIR*/
 const btnSubir = document.getElementById("btnSubir");
  
 window.addEventListener("scroll", function () {
